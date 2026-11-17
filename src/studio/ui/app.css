@@ -1,0 +1,73 @@
+:root {
+	--toolbar-height: 54px;
+	--thead-height: 28px;
+	--bg: #f7f7f5;
+	--panel: #ffffff;
+	--line: #e4e4e0;
+	--text: #1d1d1b;
+	--muted: #77776f;
+	--accent: #2f6fdf;
+	--missing: #d9822b;
+	--missing-bg: #fdf4ea;
+	--error: #c93b3b;
+	--ok: #2e9e5b;
+	--code: #f0f0ec;
+	color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #151514;
+		--panel: #1e1e1c;
+		--line: #33332f;
+		--text: #ececea;
+		--muted: #9a9a92;
+		--accent: #6d9cf0;
+		--missing: #e7a15a;
+		--missing-bg: #2b2217;
+		--error: #ef7070;
+		--ok: #5cc98a;
+		--code: #2a2a27;
+		color-scheme: dark;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+	font:
+		14px/1.45 system-ui,
+		sans-serif;
+}
+
+input,
+button,
+textarea {
+	font: inherit;
+	color: inherit;
+}
+
+input[type='search'],
+input[type='text'] {
+	padding: 5px 9px;
+	border: 1px solid var(--line);
+	border-radius: 6px;
+	background: var(--bg);
+}
+
+button {
+	padding: 5px 10px;
+	border: 1px solid var(--line);
+	border-radius: 6px;
+	background: var(--panel);
+	cursor: pointer;
+
+	&:hover {
+		border-color: var(--accent);
+	}
+}
