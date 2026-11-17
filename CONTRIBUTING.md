@@ -28,6 +28,7 @@ pnpm dev:studio                             # UI with hot reload, open the print
 
 ```sh
 pnpm check     # type check, including the Svelte files
+pnpm test      # run the tests (pnpm test:watch while working)
 pnpm format    # format with prettier
 pnpm changeset # describe your change for the changelog
 ```
